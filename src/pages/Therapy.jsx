@@ -1,12 +1,13 @@
 export default function Therapy() {
   return (
-    <iframe
+    <embed
       src="/therapy.pdf"
-      title="Therapy Review"
+      type="application/pdf"
+      width="100%"
+      height="100%"
       style={{
         width: "100vw",
         height: "100vh",
-        border: "none",
       }}
     />
   );

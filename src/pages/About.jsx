@@ -297,19 +297,23 @@ export default function About() {
 
 <div className="middle">
 
-    <h4>
-     Industries Explored
+    <h4>INDUSTRIES EXPLORED</h4>
 
-     <ul>
-      Telecommunications
-      Jewelry
-      Mental Wellness
-      Consumer Products
-      AI
-     </ul>
-    </h4>
+  <ul>
 
-  </div>
+    <li>Telecommunications</li>
+
+    <li>Jewelry</li>
+
+    <li>Mental Wellness</li>
+
+    <li>Consumer Products</li>
+
+    <li>AI</li>
+
+  </ul>
+
+</div>
 
         <div className="cta">
 

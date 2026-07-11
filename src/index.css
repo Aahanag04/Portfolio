@@ -505,11 +505,17 @@ nav{
 
 .hero{
 
+    display:flex;
+
     flex-direction:column;
 
-    height:auto;
+    align-items:flex-start;
 
-    gap:50px;
+    justify-content:flex-start;
+
+    gap:40px;
+
+    width:100%;
 
     padding:40px 0;
 
@@ -517,15 +523,25 @@ nav{
 
 .hero h1{
 
-    font-size:4rem;
+    font-size:3.4rem;
 
-    line-height:.9;
+    line-height:.92;
+
+    width:100%;
+
+    word-break:break-word;
+
+}
+
+.hero > div{
+
+    width:100%;
 
 }
 
 .hero p{
 
-    font-size:20px;
+    font-size:16px;
 
 }
 

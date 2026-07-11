@@ -1,0 +1,391 @@
+.mind{
+
+    background:#050505;
+    color:#ece5df;
+    min-height:100vh;
+
+    max-width:1550px;
+
+    margin:auto;
+
+    padding:28px;
+
+}
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    gap:16px;
+
+    align-items:center;
+
+    font-size:12px;
+
+    letter-spacing:.25em;
+
+}
+
+.back{
+
+    color:#d8d8d8;
+
+    text-decoration:none;
+
+    font-size:11px;
+
+    letter-spacing:.18em;
+
+}
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:40% 60%;
+
+    border:1px solid #242424;
+
+    background:#0b0b0b;
+
+}
+
+.heroText{
+
+    padding:48px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.number{
+
+    font-size:54px;
+
+    font-weight:300;
+
+    margin-bottom:18px;
+
+}
+
+.heroText h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:88px;
+
+    font-weight:500;
+
+    line-height:.85;
+
+    margin:0;
+
+}
+
+.heroText h2{
+
+    margin-top:18px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:28px;
+
+    font-weight:400;
+
+    letter-spacing:.08em;
+
+}
+
+.heroText p{
+
+    margin-top:34px;
+
+    width:300px;
+
+    color:#b0aaa4;
+
+    line-height:1.9;
+
+}
+
+.heroImage{
+
+    overflow:hidden;
+
+}
+
+.heroImage img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.section{
+
+    margin-top:14px;
+
+    background:#0b0b0b;
+
+    border:1px solid #242424;
+
+}
+
+.section h3{
+
+    margin:16px 18px;
+
+    font-size:18px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:500;
+
+    letter-spacing:.12em;
+
+}
+
+.full{
+
+    width:100%;
+
+    display:block;
+
+    border-top:1px solid #242424;
+
+}
+
+.build{
+
+    display:grid;
+
+    grid-template-columns:34% 66%;
+
+    margin-top:14px;
+
+    background:#0b0b0b;
+
+    border:1px solid #242424;
+
+}
+
+.build>div:first-child{
+
+    padding:36px;
+
+    border-right:1px solid #242424;
+
+}
+
+.build h3{
+
+    margin:0 0 24px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:22px;
+
+    letter-spacing:.1em;
+
+}
+
+.build ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.build li{
+
+    margin-bottom:18px;
+
+    color:#c8c2bc;
+
+    letter-spacing:.08em;
+
+}
+
+.coming{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:42px;
+
+    color:#9f9389;
+
+}
+
+footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:46px 0;
+
+}
+
+footer a{
+
+    color:#d6d6d6;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    letter-spacing:.25em;
+
+}
+
+.hero,
+.section,
+.build{
+
+    transition:.35s;
+
+}
+
+.hero:hover,
+.section:hover,
+.build:hover{
+
+    border-color:#55504c;
+
+}
+
+.heroImage img,
+.full{
+
+    transition:.5s;
+
+}
+
+.heroImage:hover img{
+
+    transform:scale(1.03);
+
+}
+
+.full:hover{
+
+    transform:scale(1.01);
+
+}
+
+.back:hover,
+footer a:hover{
+
+    opacity:.65;
+
+}
+
+@media(max-width:1100px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .heroImage{
+
+        order:-1;
+
+        height:500px;
+
+    }
+
+    .build{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .build>div:first-child{
+
+        border-right:none;
+
+        border-bottom:1px solid #242424;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .mind{
+
+        padding:16px;
+
+    }
+
+    .heroText{
+
+        padding:24px;
+
+    }
+
+    .heroText h1{
+
+        font-size:58px;
+
+    }
+
+    .heroText h2{
+
+        font-size:20px;
+
+    }
+
+    .heroText p{
+
+        width:100%;
+
+    }
+
+    .heroImage{
+
+        height:340px;
+
+    }
+
+    .coming{
+
+        min-height:220px;
+
+        font-size:30px;
+
+    }
+
+}

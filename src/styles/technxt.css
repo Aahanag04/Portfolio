@@ -1,0 +1,426 @@
+.tech{
+
+    background:#050505;
+    color:#eef3ed;
+    min-height:100vh;
+    max-width:1550px;
+    margin:auto;
+    padding:28px;
+
+}
+
+.topbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+
+}
+
+.logo{
+
+    display:flex;
+    gap:16px;
+    align-items:center;
+
+    font-size:12px;
+    letter-spacing:.25em;
+
+}
+
+.back{
+
+    color:#d7d7d7;
+    text-decoration:none;
+    font-size:11px;
+    letter-spacing:.2em;
+
+}
+
+.hero{
+
+    display:grid;
+    grid-template-columns:40% 60%;
+
+    background:#0b0b0b;
+
+    border:1px solid #202020;
+
+}
+
+.heroText{
+
+    padding:46px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.number{
+
+    font-size:54px;
+    font-weight:300;
+    color:#d8d8d8;
+    margin-bottom:18px;
+
+}
+
+.heroText h1{
+
+    font-size:84px;
+    margin:0;
+    line-height:.88;
+    font-weight:700;
+
+}
+
+.heroText h2{
+
+    margin-top:20px;
+    line-height:1.2;
+    font-size:34px;
+    font-family:"Cormorant Garamond",serif;
+    font-weight:500;
+
+}
+
+.heroText p{
+
+    width:290px;
+    margin-top:28px;
+    color:#9fa89d;
+    line-height:1.8;
+
+}
+
+.heroImage{
+
+    overflow:hidden;
+
+}
+
+.heroImage img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+.section{
+
+    margin-top:14px;
+    background:#0b0b0b;
+    border:1px solid #202020;
+
+}
+
+.section h3{
+
+    padding:18px;
+    margin:0;
+
+    font-size:18px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:500;
+
+    letter-spacing:.12em;
+
+}
+
+.ecosystem{
+
+    display:grid;
+    grid-template-columns:28% 72%;
+
+    border-top:1px solid #202020;
+
+}
+
+.left{
+
+    padding:28px;
+
+    color:#bfc6bc;
+
+    line-height:1.8;
+
+}
+
+.cards{
+
+    display:grid;
+
+    gap:12px;
+
+    padding:18px;
+
+}
+
+.ecoCard{
+
+    border:1px solid #24422d;
+
+    background:#0d1110;
+
+    border-radius:8px;
+
+    padding:18px 22px;
+
+}
+
+.ecoCard h4{
+
+    color:#a6ffb5;
+
+    margin:0 0 8px;
+
+    font-size:17px;
+
+    letter-spacing:.06em;
+
+}
+
+.ecoCard p{
+
+    color:#aab3a9;
+
+    line-height:1.6;
+
+    margin:0;
+
+    font-size:14px;
+
+}
+
+.workflow{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    padding:18px;
+
+    border-top:1px solid #202020;
+
+}
+
+.workflow img{
+
+    width:100%;
+
+    display:block;
+
+    border:1px solid #202020;
+
+}
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    margin-top:14px;
+
+    border:1px solid #202020;
+
+    background:#0b0b0b;
+
+}
+
+.stats div{
+
+    padding:34px;
+
+    text-align:center;
+
+    border-right:1px solid #202020;
+
+}
+
+.stats div:last-child{
+
+    border-right:none;
+
+}
+
+.stats h1{
+
+    color:#9cffab;
+
+    font-size:56px;
+
+    margin:0;
+
+    font-weight:300;
+
+}
+
+.stats span{
+
+    display:block;
+
+    margin-top:10px;
+
+    letter-spacing:.18em;
+
+    font-size:12px;
+
+    color:#b6b6b6;
+
+}
+
+footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:44px 0;
+
+}
+
+footer a{
+
+    text-decoration:none;
+
+    color:#bfe7c5;
+
+    letter-spacing:.25em;
+
+    font-size:12px;
+
+}
+
+.hero,
+.section,
+.stats{
+
+    transition:.35s;
+
+}
+
+.hero:hover,
+.section:hover,
+.stats:hover{
+
+    border-color:#2e5a38;
+
+}
+
+.ecoCard{
+
+    transition:.35s;
+
+}
+
+.ecoCard:hover{
+
+    transform:translateY(-2px);
+
+    border-color:#7cff98;
+
+}
+
+.workflow img{
+
+    transition:.35s;
+
+}
+
+.workflow img:hover{
+
+    transform:scale(1.02);
+
+}
+
+.heroImage img{
+
+    transition:.6s;
+
+}
+
+.heroImage:hover img{
+
+    transform:scale(1.03);
+
+}
+
+@media(max-width:1000px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .heroImage{
+
+        order:-1;
+
+        height:420px;
+
+    }
+
+    .ecosystem{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stats{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .tech{
+
+        padding:16px;
+
+    }
+
+    .heroText{
+
+        padding:24px;
+
+    }
+
+    .heroText h1{
+
+        font-size:56px;
+
+    }
+
+    .heroText h2{
+
+        font-size:24px;
+
+    }
+
+    .workflow{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

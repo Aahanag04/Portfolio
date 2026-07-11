@@ -1,0 +1,553 @@
+.ij{
+
+    background:#050505;
+    color:#f2efe8;
+    min-height:100vh;
+    padding:28px;
+    max-width:1550px;
+    margin:auto;
+
+}
+
+.topbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+
+}
+
+.logo{
+
+    display:flex;
+    gap:16px;
+    align-items:center;
+
+    font-size:12px;
+
+    letter-spacing:.25em;
+
+}
+
+.back{
+
+    text-decoration:none;
+    color:#dadada;
+
+    font-size:11px;
+
+    letter-spacing:.18em;
+
+}
+
+.hero{
+
+    position:relative;
+
+    height:88vh;
+
+    border:1px solid #222;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:70px;
+
+    background:
+    radial-gradient(circle at 82% 18%,
+
+    #6a1c2c 0%,
+
+    #3d111b 28%,
+
+    #17070b 52%,
+
+    #050505 78%
+
+);}
+
+.heroBG{
+
+    position:absolute;
+
+    right:-30px;
+
+    top:-20px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:34rem;
+
+    font-weight:600;
+
+    line-height:.8;
+
+    letter-spacing:-.08em;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    z-index:0;
+
+    background:linear-gradient(
+        180deg,
+        #7a2033 0%,
+        #5b1727 35%,
+        #3d101b 70%,
+        #24090f 100%
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    opacity:.22;
+
+}
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    opacity:.28;
+
+}
+
+.heroContent{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.heroNumber{
+
+    display:block;
+
+    font-size:64px;
+
+    color:#d2d2d2;
+
+    margin-bottom:20px;
+
+    font-family:"Cormorant Garamond",serif;
+
+}
+
+.hero h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:9rem;
+
+    line-height:.82;
+
+    font-weight:500;
+
+    margin:0;
+
+}
+
+.hero h2{
+
+    margin-top:18px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:2.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+}
+
+.hero p{
+
+    margin-top:34px;
+
+    width:360px;
+
+    color:#a8a8a8;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+.section{
+
+    margin-top:14px;
+
+    border:1px solid #252525;
+
+    background:#0b0b0b;
+
+}
+
+.section h3{
+
+    margin:16px 18px;
+
+    font-size:18px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:500;
+
+    letter-spacing:.12em;
+
+}
+
+.brandGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    border-top:1px solid #252525;
+
+}
+
+.brandGrid img{
+
+    width:100%;
+
+    aspect-ratio:1;
+
+    object-fit:cover;
+
+    display:block;
+
+    border-right:1px solid #252525;
+
+}
+
+.brandGrid img:last-child{
+
+    border-right:none;
+
+}
+
+.identity{
+
+    display:grid;
+
+    grid-template-columns:1fr 2fr 1fr;
+
+    border-top:1px solid #252525;
+
+}
+
+.card{
+
+    padding:14px;
+
+    border-right:1px solid #252525;
+
+}
+
+.card:last-child{
+
+    border-right:none;
+
+}
+
+.card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.card span{
+
+    display:block;
+
+    margin-top:14px;
+
+    font-size:11px;
+
+    letter-spacing:.16em;
+
+    color:#b6b6b6;
+
+}
+
+.wide{
+
+    padding:0;
+
+}
+
+.wide img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.wide span{
+
+    padding:14px;
+
+}
+
+.campaign{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    border-top:1px solid #252525;
+
+}
+
+.campaign img{
+
+    width:100%;
+
+    display:block;
+
+    aspect-ratio:16/10;
+
+    object-fit:cover;
+
+    border-right:1px solid #252525;
+
+}
+
+.campaign img:last-child{
+
+    border-right:none;
+
+}
+
+footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:46px 0;
+
+}
+
+footer a{
+
+    text-decoration:none;
+
+    color:#d6d6d6;
+
+    font-size:12px;
+
+    letter-spacing:.28em;
+
+}
+
+.hero,
+.section{
+
+    transition:.3s;
+
+}
+
+.hero:hover,
+.section:hover{
+
+    border-color:#3b3b3b;
+
+}
+
+.brandGrid img,
+.campaign img,
+.card img{
+
+    transition:.45s;
+
+}
+
+.brandGrid img:hover,
+.campaign img:hover{
+
+    transform:scale(1.03);
+
+    cursor:pointer;
+
+}
+
+.heroImage img{
+
+    transition:.6s;
+
+}
+
+.heroImage:hover img{
+
+    transform:scale(1.03);
+
+}
+
+.back:hover,
+footer a:hover{
+
+    opacity:.6;
+
+}
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+::selection{
+
+    background:#ffffff22;
+
+}
+
+@media(max-width:1100px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .heroImage{
+
+        height:520px;
+
+        order:-1;
+
+    }
+
+    .brandGrid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+    .identity{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .card{
+
+        border-right:none;
+
+        border-bottom:1px solid #252525;
+
+    }
+
+    .wide{
+
+        padding:14px;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .ij{
+
+        padding:16px;
+
+    }
+
+    .heroText{
+
+        padding:26px;
+
+    }
+
+    .heroText h1{
+
+        font-size:58px;
+
+    }
+
+    .heroText h2{
+
+        font-size:20px;
+
+    }
+
+    .heroText p{
+
+        width:100%;
+
+    }
+
+    .number{
+
+        font-size:40px;
+
+    }
+
+    .heroImage{
+
+        height:340px;
+
+    }
+
+    .brandGrid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .campaign{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .campaign img{
+
+        border-right:none;
+
+        border-bottom:1px solid #252525;
+
+    }
+
+    .campaign img:last-child{
+
+        border-bottom:none;
+
+    }
+
+    .section h3{
+
+        font-size:16px;
+
+        margin:14px;
+
+    }
+
+    footer{
+
+        padding:34px 0;
+
+    }
+
+}

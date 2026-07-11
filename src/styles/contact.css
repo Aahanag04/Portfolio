@@ -1,0 +1,648 @@
+.contact{
+
+    background:#050505;
+    max-width:1600px;
+    margin:auto;
+    min-height:100vh;
+    overflow:hidden;
+
+}
+
+/* ---------------- NAV ---------------- */
+
+.topbar{
+
+    height:82px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    color:#f2efe8;
+
+    background:#050505;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    font-size:12px;
+
+    letter-spacing:.28em;
+
+}
+
+.back{
+
+    color:#f2efe8;
+
+    text-decoration:none;
+
+    font-size:11px;
+
+    letter-spacing:.22em;
+
+    transition:.3s;
+
+}
+
+.back:hover{
+
+    opacity:.6;
+
+}
+
+
+
+/* ---------------- HERO ---------------- */
+
+.contactHero{
+
+    display:grid;
+
+    grid-template-columns:58% 42%;
+
+    min-height:700px;
+
+    background:#f5f0e8;
+
+    position:relative;
+
+}
+
+.heroLeft{
+
+    position:relative;
+
+    padding:80px 70px;
+
+}
+
+.pageNo{
+
+    display:block;
+
+    color:#cb6f83;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:28px;
+
+    margin-bottom:40px;
+
+}
+
+.heroLine{
+
+    position:absolute;
+
+    left:40px;
+
+    top:150px;
+
+    width:1px;
+
+    height:360px;
+
+    background:#bbb;
+
+}
+
+.heroLeft h1{
+
+    margin:0;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:8rem;
+
+    line-height:.85;
+
+    font-weight:500;
+
+    color:#111;
+
+}
+
+.heroLeft h1 span{
+
+    color:#c9778f;
+
+    font-style:italic;
+
+}
+
+.heroLeft p{
+
+    margin-top:50px;
+
+    width:320px;
+
+    color:#2a2a2a;
+
+    line-height:1.9;
+
+    font-size:19px;
+
+}
+
+
+
+/* ---------------- RIGHT ---------------- */
+
+.heroRight{
+
+    position:relative;
+
+}
+
+
+
+/* orbit */
+
+.orbit{
+
+    position:absolute;
+
+    right:-170px;
+
+    top:60px;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(0,0,0,.12);
+
+}
+
+.orbit::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:70px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(0,0,0,.08);
+
+}
+
+.orbit::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:140px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(0,0,0,.06);
+
+}
+
+
+
+/* pink note */
+
+.circleNote{
+
+    position:absolute;
+
+    left:80px;
+
+    bottom:120px;
+
+    width:250px;
+
+    height:250px;
+
+    border:2px solid #d9879f;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    font-family:"Caveat",cursive;
+
+    font-size:42px;
+
+    color:#ba6d83;
+
+    transform:rotate(-8deg);
+
+}
+
+.circleNote::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-10px;
+
+    border:2px solid #d9879f;
+
+    border-radius:48% 52% 46% 54%;
+
+    opacity:.45;
+
+}
+
+
+
+/* divider */
+
+.contactHero::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    height:1px;
+
+    background:#d6cfc5;
+
+}
+
+/* ========================================= */
+/* CONTACT GRID */
+/* ========================================= */
+
+.contactGrid{
+
+    display:grid;
+    grid-template-columns:58% 42%;
+    background:#050505;
+    color:#f2efe8;
+    min-height:640px;
+
+}
+
+/* ---------------- LEFT ---------------- */
+
+.left{
+
+    padding:90px 80px;
+    border-right:1px solid #222;
+
+}
+
+.left h3{
+
+    font-size:13px;
+    letter-spacing:.35em;
+    color:#f2efe8;
+    margin-bottom:60px;
+    font-weight:400;
+
+}
+
+.contactItem{
+
+    padding:34px 0;
+    border-bottom:1px solid #232323;
+
+}
+
+.contactItem:last-child{
+
+    border-bottom:none;
+
+}
+
+.label{
+
+    display:block;
+    margin-bottom:16px;
+    color:#8d8d8d;
+    letter-spacing:.28em;
+    font-size:11px;
+
+}
+
+.contactItem a{
+
+    color:white;
+    text-decoration:none;
+    font-family:"Cormorant Garamond",serif;
+    font-size:42px;
+    transition:.35s;
+
+}
+
+.contactItem p{
+
+    margin:0;
+    font-family:"Cormorant Garamond",serif;
+    font-size:42px;
+
+}
+
+.contactItem a:hover{
+
+    color:#d8889f;
+
+}
+
+
+
+/* ---------------- RIGHT ---------------- */
+
+.right{
+
+    padding:90px 80px;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+
+}
+
+.right h3{
+
+    margin-bottom:60px;
+    font-size:13px;
+    letter-spacing:.35em;
+    font-weight:400;
+
+}
+
+.connectLink{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:28px 0;
+
+    border-bottom:1px solid #222;
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.35s;
+
+}
+
+.connectLink small{
+
+    display:block;
+
+    letter-spacing:.28em;
+
+    color:#8d8d8d;
+
+    font-size:11px;
+
+    margin-bottom:10px;
+
+}
+
+.connectLink p{
+
+    margin:0;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:28px;
+
+}
+
+.connectLink span{
+
+    font-size:34px;
+
+    color:#d8889f;
+
+    transition:.35s;
+
+}
+
+.connectLink:hover{
+
+    padding-left:14px;
+
+}
+
+.connectLink:hover span{
+
+    transform:translate(8px,-6px);
+
+}
+
+
+
+/* handwritten */
+
+.signature{
+
+    margin-top:auto;
+
+    align-self:flex-end;
+
+    font-family:"Caveat",cursive;
+
+    font-size:110px;
+
+    color:#d8889f;
+
+    transform:rotate(-6deg);
+
+    padding-top:90px;
+
+}
+
+
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:30px 40px;
+
+    border-top:1px solid #1f1f1f;
+
+    background:#050505;
+
+}
+
+footer p{
+
+    margin:0;
+
+    color:#9d9d9d;
+
+    letter-spacing:.22em;
+
+    font-size:11px;
+
+}
+
+
+
+/* ---------------- HOVER ---------------- */
+
+.connectLink,
+.contactItem a{
+
+    transition:.35s;
+
+}
+
+.back{
+
+    transition:.35s;
+
+}
+
+.back:hover{
+
+    opacity:.6;
+
+}
+
+
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:1100px){
+
+.contactHero{
+
+    grid-template-columns:1fr;
+
+}
+
+.heroRight{
+
+    min-height:420px;
+
+}
+
+.contactGrid{
+
+    grid-template-columns:1fr;
+
+}
+
+.left{
+
+    border-right:none;
+
+    border-bottom:1px solid #222;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.topbar{
+
+    padding:0 18px;
+
+}
+
+.heroLeft{
+
+    padding:50px 26px;
+
+}
+
+.heroLeft h1{
+
+    font-size:4.5rem;
+
+}
+
+.heroLeft p{
+
+    width:100%;
+
+    font-size:17px;
+
+}
+
+.circleNote{
+
+    width:180px;
+
+    height:180px;
+
+    font-size:28px;
+
+    left:20px;
+
+}
+
+.orbit{
+
+    display:none;
+
+}
+
+.left,
+.right{
+
+    padding:50px 24px;
+
+}
+
+.contactItem a,
+.contactItem p{
+
+    font-size:28px;
+
+}
+
+.signature{
+
+    font-size:74px;
+
+}
+
+footer{
+
+    flex-direction:column;
+
+    gap:14px;
+
+    text-align:center;
+
+}
+
+}
